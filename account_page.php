@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<?php include 'header.php';
+<?php include 'header.php';?>
 
-?>
+
+
+
 <html>
     <head>
         <title>creation de compte</title>
@@ -18,5 +20,7 @@
 <input type="password" name="password" placeholder="mots de passe"/>
 <input type="password" name="password2" placeholder="mots de passe"/>
 <input type="submit" name="signup-button" placeholder="envoyer"/>
+
 </body>
+<?php include 'footer.php';?>
 </html>

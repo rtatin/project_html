@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>bonsoir</title>
-    <link rel="stylesheet" href="css/head.css" />
+    <title>titre</title>
+    <link rel="stylesheet" href="head.css" />
 </head>
 
 <body>
@@ -13,12 +13,20 @@
             </div>
 
             <div class="menuCategory">
-				
-		    	<span class="navtitle">Recipe</span>
-		    	<div class="withSeveralLinks">
-			    	<a href="chicken.html">Chicken</a>
-			    	<a href="beef.html">Beef</a>
-				</div>
+            <div class="tab">
+  <button class="tablinks" onclick="window.location.href='search.php'">search</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipe')">product page</button>
+  <button class="tablinks" onclick="window.location.href='account_page.php'">crée un compte</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipe')">cart page</button>
+</div>
+		    	
+
+<p id="identification" onclick="pannaux()">s'identifier</p>
+
+
+
+<input type="text" name="username" placeholder="Nom d utilisateur"/>
+<input type="password" name="password" placeholder="mots de passe"/>
             </div>
             
         </nav>
