@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>titre</title>
-    <link rel="stylesheet" href="head.css" />
+    <title>bonsoir</title>
+    <link rel="stylesheet" href="css/head.css" />
 </head>
 
 <body>
@@ -13,22 +13,19 @@
             </div>
 
             <div class="menuCategory">
-            <div class="tab">
-  <button class="tablinks" onclick="window.location.href='search.php'">search</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">product page</button>
-  <button class="tablinks" onclick="window.location.href='account_page.php'">crée un compte</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">cart page</button>
-</div>
-		    	
-
-<p id="identification" onclick="pannaux()">s'identifier</p>
-
-
-
-<input type="text" name="username" placeholder="Nom d utilisateur"/>
-<input type="password" name="password" placeholder="mots de passe"/>
+				
+		    	<span class="navtitle">Recipe</span>
+		    	<div class="withSeveralLinks">
+			    	<a href="chicken.html">Chicken</a>
+			    	<a href="beef.html">Beef</a>
+				</div>
             </div>
-            
+            <form class="form-inline my-2 my-lg-0" id="loginForm" action="index.php" method="POST">
+	<input type="hidden" name="page" value="login" />
+	<input class="form-control form-control-sm mr-sm-2" type="text" name="login" autocomplete="username" placeholder="login" aria-label="login" value=""/>
+	<input class="form-control form-control-sm mr-sm-2" type="password" name="password" autocomplete="current-password" placeholder="password" />
+	<button class="btn btn-sm btn-primary my-2 my-sm-0" type="submit" value="Login">Login</button>
+</form>
         </nav>
     </header>
 
