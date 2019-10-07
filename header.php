@@ -11,10 +11,10 @@
         <nav>
             <span>titre</span>
             <div class="menuCategory">
-  <button class="tablinks" onclick="window.location.href='search.php'">search</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">product page</button>
-  <button class="tablinks" onclick="window.location.href='account_page.php'">crée un compte</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">cart page</button>
+  <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipe')">Products page</button>
+  <button class="tablinks" onclick="window.location.href='account_page.php'">Create account</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipe')">Cart</button>
         </nav>
 
         <div class login_box>
@@ -40,7 +40,7 @@
         </tr>
         <tr>
         <td>
-        <div><a href="account_page.php">crée un compte</a></div>
+        <div class="withSeveralLinks"><a href="account_page.php">Create account</a></div>
         </td>  
         </tr>
 
@@ -54,4 +54,5 @@
     </header>
 
 </body>
+<?php include 'footer.php';?>
 </html>
