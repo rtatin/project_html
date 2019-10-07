@@ -28,8 +28,7 @@ h1
     font-size: 28px;
 }
 
-input[type="text"],
-input[type="password"]
+input[type="text"],[type="password"]
 {
     display: block;
     box-sizing: border-box;
@@ -46,7 +45,7 @@ input[type="password"]
     transition: 0.2s ease;
 }
 
-input[type="submit"]
+input[type="submitinfo"]
 {
     margin-bottom: 28px;
     width: 120px;
@@ -63,11 +62,27 @@ input[type="submit"]
     
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus
+input[type="submitinfo"]:hover,
+input[type="submitinfo"]:focus
 {
     background: #ff5722;
     transition: 0.2s ease;
+}
+
+.formulaire{
+    margin-right:0px;
+    letter-spacing: 1px;
+    font-size:17px;
+     position:absolute;
+   top:50%;
+   left:50%;
+   width:300px; /* A toi de donner la bonne largeur */
+   height:200px; /* A toi de donner la bonne hauteur */
+   margin-left:-150px; /* -largeur/2 */
+   margin-top:-100px; 
+
+
+
 }
 
 
