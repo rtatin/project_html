@@ -10,6 +10,7 @@
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
 <center>
+<div class="tableProducts">
 <table border>
     <thead><tr>
         <th colspan="2", height="70">
@@ -146,6 +147,7 @@
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 </body>
 <?php include 'footer.php';?>
