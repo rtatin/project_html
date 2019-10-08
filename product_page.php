@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
+<center><caption><font size="25" color=white face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
 <center>
 <div class="tableProducts">
@@ -55,10 +55,12 @@
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 <br>
 <br>
 <br>
+<div class="tableProducts">
 <center><table border>
     <thead><tr>
         <th colspan="2", height="70">
@@ -103,10 +105,12 @@
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 <br>
 <br>
 <br>
+<div class="tableProducts">
 <center><table border>
     <thead><tr>
         <th colspan="2", height="70"><p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Chaussures</font></p></th>

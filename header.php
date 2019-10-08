@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>titre</title>
+    <title>Website</title>
     <link rel="stylesheet" href="head.css" />
     
 </head>
@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <span>titre</span>
+            <span>Website</span>
             <div class="menuCategory">
   <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
   <div class="dropdown">
