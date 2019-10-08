@@ -1,9 +1,16 @@
 body
 {
-    background-color: lightskyblue;
+    background-color: rgb(68, 63, 63);
 }
 
 table
 {
-    background-color: lightsteelblue;
+    border: medium solid #000000;
+    background-color: rgb(247, 176, 176);
+}
+
+td
+{
+    border: medium solid #000000;
+    background-color: whitesmoke;
 }
