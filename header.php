@@ -13,7 +13,7 @@
             <div class="menuCategory">
   <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
   <div class="dropdown">
-  <button class="tablinks" onclick="window.location.href='product_page.html'">product page</button>
+  <button class="tablinks" onclick="window.location.href='product_page.php'">product page</button>
   <div class="dropdown-content">
     <a id="linkhead" href="#">Link 1</a>
     <a id="linkhead" href="#">Link 2</a>
