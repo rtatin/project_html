@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<?php include 'header.php';?>
 
+<?php require "header.php";?>
 
 
 
@@ -10,7 +9,6 @@
         <link rel="stylesheet" href="account_page.css" />
     </head>
 <body>
-
 <form class="formulaire">
 <h1>crée un compte</h1>
 <p>username</p>

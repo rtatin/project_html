@@ -1,3 +1,4 @@
+<?php require "header.php";?>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -147,4 +148,5 @@
 </table>
 </center>
 </body>
+<?php include 'footer.php';?>
 </html>
