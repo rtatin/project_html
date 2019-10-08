@@ -28,7 +28,7 @@ h1
     font-size: 28px;
 }
 
-input[type="text"],[type="password"]
+#useninfo
 {
     display: block;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ input[type="text"],[type="password"]
     transition: 0.2s ease;
 }
 
-input[type="submitinfo"]
+#submitinfo
 {
     margin-bottom: 28px;
     width: 120px;
@@ -61,9 +61,8 @@ input[type="submitinfo"]
     cursor: pointer;
     
 }
-
-input[type="submitinfo"]:hover,
-input[type="submitinfo"]:focus
+#submitinfo:hover,
+#submitinfo:focus
 {
     background: #ff5722;
     transition: 0.2s ease;
