@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>titre</title>
+    <title>Website</title>
     <link rel="stylesheet" href="head.css" />
     
 </head>
@@ -9,49 +9,50 @@
 <body>
     <header>
         <nav>
-            <span>titre</span>
+            <span>Website</span>
             <div class="menuCategory">
-  <button class="tablinks" onclick="window.location.href='search.php'">search</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">product page</button>
-  <button class="tablinks" onclick="window.location.href='account_page.php'">crée un compte</button>
-  <button class="tablinks" onclick="openCity(event, 'Recipe')">cart page</button>
-        </nav>
-
+  <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
+  <div class="dropdown">
+  <button class="tablinks" onclick="window.location.href='product_page.php'">product page</button>
+  <div class="dropdown-content">
+    <a id="linkhead" href="#">Link 1</a>
+    <a id="linkhead" href="#">Link 2</a>
+    <a id="linkhead" href="#">Link 3</a>
+  </div>
+  </div>
+  <button class="tablinks" onclick="window.location.href='account_page.php'">Create account</button>
+  <button class="tablinks" onclick="window.location.href='cart_page.php'">cart page</button>
+   </nav>
         <div class login_box>
         <form class="identify">
         <table>
+            
         <tr>
         <td>Username</td>
         <td>Password</td>
         </tr>
+
         <tr>
-        <td><div class="textbox">
-            <input type="text" placeholder="Username" name="" value="">
-            </div>
+        <td>
+            <input id="textbox" type="text" placeholder="Username" name="" value="">
         </td>
         <td>
-            <div class="textbox">
-            <input type="password" placeholder="Password" name="" value="">
-            </div>
+            <input id="textbox" type="password" placeholder="Password" name="" value="">
         </td>
         <td>
-        <input type="submithead" name="" value="envoyer">
+            <input id="submithead" type="submit"  name="" value="send">
         </td>
         </tr>
+
         <tr>
         <td>
-        <div><a href="account_page.php">crée un compte</a></div>
+        <div class="withSeveralLinks"><a href="account_page.php">Create account</a></div>
         </td>  
         </tr>
-
-
-
 </table>
 </form>
-
-
 </div>
     </header>
-
 </body>
+<?php include 'footer.php';?>
 </html>

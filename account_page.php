@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<?php include 'header.php';?>
 
+<?php require "header.php";?>
 
 
 
 <html>
+<div style="width:25px;height:700px;overflow:auto; margin:auto;"> 
     <head>
         <title>creation de compte</title>
         <link rel="stylesheet" href="account_page.css" />
     </head>
 <body>
-<div id="login-box"></div>
-<div class="box"></div>
-
 <form class="formulaire">
-<h1>crée un compte</h1>
-<p>username</p>
-<input type="text" name="username" placeholder="Nom d utilisateur"/>
-<p>email</p>
-<input type="text" name="email" placeholder="Email"/>
-<p>password</p>
-<input type="password" name="password" placeholder="mots de passe"/>
-<p>check your password</p>
-<input type="password" name="password2" placeholder="mots de passe"/>
+<h1>Create account</h1>
+<p>Username</p>
+<input id="useninfo" type="text" name="Username" placeholder="Enter Username"/>
+<p>E-mail</p>
+<input id="useninfo"type="text" name="email" placeholder="E-mail"/>
+<p>Password</p>
+<input id="useninfo" type="password" name="password" placeholder="Enter password"/>
+<p>Check your password</p>
+<input id="useninfo" type="password" name="password2" placeholder="Enter again password"/>
 
-<input type="submitinfo" name="signup-button" placeholder="envoyer"/>
+<input id="submitinfo" type="submit" name="signup-button" value="Sign up"/>
+
 </form>
 </body>
 <?php include 'footer.php';?>
+</div>
 </html>
