@@ -1,9 +1,9 @@
-body
+#body1
 {
     background-color: rgb(68, 63, 63);
 }
 
-table
+#table1
 {
     border: medium solid #000000;
     background-color: rgb(247, 176, 176);
