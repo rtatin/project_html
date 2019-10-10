@@ -1,3 +1,4 @@
+<?php require "header.php";?>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -5,11 +6,20 @@
     <link rel="stylesheet" href="product_page.css" />
 
 </head>
+<<<<<<< HEAD:product_page.html
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
 <center>
 <table id="table1" border>
+=======
+<body>
+<center><caption><font size="25" color=white face="Calibri"><b>Nos Produits</b></font></caption></center>
+<br>
+<center>
+<div class="tableProducts">
+<table border>
+>>>>>>> mock_up:product_page.php
     <thead><tr>
         <th colspan="2", height="70">
             <p style="color:rgb(11, 52, 129)";><font face="Calibri", size="6">Chemise</font></p>
@@ -56,12 +66,18 @@ Description: Chemise coupe droite, solide et anti-transpirante
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 <br>
 <br>
 <br>
+<<<<<<< HEAD:product_page.html
 <center>
 <table id="table1" border>
+=======
+<div class="tableProducts">
+<center><table border>
+>>>>>>> mock_up:product_page.php
     <thead><tr>
         <th colspan="2", height="70">
             <p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Pantalon</font></p>
@@ -108,12 +124,18 @@ Description: Pantalon chino slim, solide en coton (90%) et polyester (10%)
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 <br>
 <br>
 <br>
+<<<<<<< HEAD:product_page.html
 <center>
 <table id="table1" border>
+=======
+<div class="tableProducts">
+<center><table border>
+>>>>>>> mock_up:product_page.php
     <thead><tr>
         <th colspan="2", height="70"><p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Chaussures</font></p></th>
     </tr></thead>
@@ -156,6 +178,8 @@ Description: Chaussures types bateau, en cuir de veau teinté
         </td>
     </tr></tbody>
 </table>
+</div>
 </center>
 </body>
+<?php include 'footer.php';?>
 </html>
