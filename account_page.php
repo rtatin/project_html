@@ -4,7 +4,7 @@
 
 
 <html>
-<div style="width:25px;height:700px;overflow:auto; margin:auto;"> 
+<div id="create_account" > 
     <head>
         <title>creation de compte</title>
         <link rel="stylesheet" href="account_page.css" />
@@ -25,6 +25,7 @@
 
 </form>
 </body>
-<?php include 'footer.php';?>
+
 </div>
+<?php include 'footer.php';?>
 </html>
