@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="product_page.css" />
 
 </head>
+<<<<<<< Updated upstream
 <<<<<<< HEAD:product_page.html
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
@@ -13,13 +14,26 @@
 <center>
 <table id="table1" border>
 =======
+=======
+<<<<<<< HEAD:product_page.php
+>>>>>>> Stashed changes
 <body>
 <center><caption><font size="25" color=white face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
 <center>
 <div class="tableProducts">
 <table border>
+<<<<<<< Updated upstream
 >>>>>>> mock_up:product_page.php
+=======
+=======
+<body id="body1">
+<center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
+<br>
+<center>
+<table id="table1" border>
+>>>>>>> mock_up:product_page.html
+>>>>>>> Stashed changes
     <thead><tr>
         <th colspan="2", height="70">
             <p style="color:rgb(11, 52, 129)";><font face="Calibri", size="6">Chemise</font></p>
@@ -71,6 +85,7 @@ Description: Chemise coupe droite, solide et anti-transpirante
 <br>
 <br>
 <br>
+<<<<<<< Updated upstream
 <<<<<<< HEAD:product_page.html
 <center>
 <table id="table1" border>
@@ -78,6 +93,15 @@ Description: Chemise coupe droite, solide et anti-transpirante
 <div class="tableProducts">
 <center><table border>
 >>>>>>> mock_up:product_page.php
+=======
+<<<<<<< HEAD:product_page.php
+<div class="tableProducts">
+<center><table border>
+=======
+<center>
+<table id="table1" border>
+>>>>>>> mock_up:product_page.html
+>>>>>>> Stashed changes
     <thead><tr>
         <th colspan="2", height="70">
             <p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Pantalon</font></p>
@@ -129,6 +153,7 @@ Description: Pantalon chino slim, solide en coton (90%) et polyester (10%)
 <br>
 <br>
 <br>
+<<<<<<< Updated upstream
 <<<<<<< HEAD:product_page.html
 <center>
 <table id="table1" border>
@@ -136,6 +161,15 @@ Description: Pantalon chino slim, solide en coton (90%) et polyester (10%)
 <div class="tableProducts">
 <center><table border>
 >>>>>>> mock_up:product_page.php
+=======
+<<<<<<< HEAD:product_page.php
+<div class="tableProducts">
+<center><table border>
+=======
+<center>
+<table id="table1" border>
+>>>>>>> mock_up:product_page.html
+>>>>>>> Stashed changes
     <thead><tr>
         <th colspan="2", height="70"><p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Chaussures</font></p></th>
     </tr></thead>

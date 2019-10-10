@@ -1,6 +1,14 @@
 #body1
 {
 <<<<<<< HEAD
+    background-color: #333;
+    position: relative;
+}
+
+.tableProducts
+{
+    background-color: white;
+=======
     background-color: rgb(68, 63, 63);
 }
 
@@ -14,13 +22,5 @@ td
 {
     border: medium solid #000000;
     background-color: whitesmoke;
-=======
-    background-color: #333;
-    position: relative;
-}
-
-.tableProducts
-{
-    background-color: white;
 >>>>>>> mock_up
 }
