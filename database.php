@@ -6,57 +6,57 @@ function getAllProducts(){
     return executeQuery($query,null);
 }
 
-function getProductByCode($productCode)
+function getProductById($productId)
 {
-    $params = array('productCode' => $productCode);
+    $params = array('productCode' => $productId);
     $query = "
         select p.*
           from product p
-          where p.code = '".$productCode."'
+          where p.id = '".$productId."'
     ";
     return executeQuery($query, $params);
 }
 
-function getPriceByProductCode($productCode)
+function getPriceByProductId($productId)
 {
-    $params = array('productCode' => $recipeCode);
+    $params = array('productCode' => $recipeId);
     $query = "
         select p.unit_price
           from product p
-          where p.code = '".$productCode."'
+          where p.id = '".$productId."'
     ";
     return executeQuery($query, $params);
 }
 
-function getColorsByProductCode($productCode)
+function getColorsByProductId($productId)
 {
-    $params = array('productCode' => $recipeCode);
+    $params = array('productCode' => $recipeId);
     $query = "
         select p.Colors.*
           from product p
-          where p.code = '".$productCode."'
+          where p.id = '".$productId."'
     ";
     return executeQuery($query, $params);
 }
 
-function getNameByProductCode($productCode)
+function getNameByProductId($productId)
 {
-    $params = array('productCode' => $recipeCode);
+    $params = array('productCode' => $recipeId);
     $query = "
         select p.name
           from product p
-          where p.code = '".$productCode."'
+          where p.id = '".$productId."'
     ";
     return executeQuery($query, $params);
 }
 
-function getSizeByProductCode($productCode)
+function getSizeByProductId($productId)
 {
-    $params = array('productCode' => $recipeCode);
+    $params = array('productCode' => $recipeId);
     $query = "
         select p.size.*
           from product p
-          where p.code = '".$productCode."'
+          where p.id = '".$productId."'
     ";
     return executeQuery($query, $params);
 }
