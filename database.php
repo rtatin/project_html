@@ -3,7 +3,7 @@
 function getAllProducts(){
 
     $query='select * from products';
-    return executeQuery($query,null)
+    return executeQuery($query,null);
 }
 
 function getProductByCode($productCode)
@@ -33,6 +33,17 @@ function getColorsByProductCode($productCode)
     $params = array('productCode' => $recipeCode);
     $query = "
         select p.Colors.*
+          from product p
+          where p.code = '".$productCode."'
+    ";
+    return executeQuery($query, $params);
+}
+
+function getNameByProductCode($productCode)
+{
+    $params = array('productCode' => $recipeCode);
+    $query = "
+        select p.name
           from product p
           where p.code = '".$productCode."'
     ";
