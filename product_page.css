@@ -30,4 +30,34 @@ body{
 {
     border: medium solid #000000;
     background-color: whitesmoke;
+    width:"700";
+    height:"500";
 }
+#tableau1{
+    width:"700";
+    height:"500";
+    background-color: white;
+
+}
+
+.textProducts{
+    color:white;
+    font: "Calibri", 
+}
+
+.buttonAdd{
+    background: black;
+    color:white;
+    padding:6px 0 6px 0;
+    font:bold 13px Arial;
+    border-radius:2px;
+	width:100px;
+    border:1px solid #ccc;
+}
+
+.imageProducts{
+ 
+    height: 300;
+    width: 300;
+}
+
