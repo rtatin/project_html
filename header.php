@@ -1,4 +1,8 @@
+<?php include_once 'database.php';
+
+?>
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>Website</title>
@@ -15,9 +19,10 @@
   <div class="dropdown">
   <button class="tablinks" onclick="window.location.href='product_page.php'">product page</button>
   <div class="dropdown-content">
-    <a id="linkhead" href="#">Link 1</a>
-    <a id="linkhead" href="#">Link 2</a>
-    <a id="linkhead" href="#">Link 3</a>
+    <?php foreach (getAllProducts() as $products) {?>
+    <a id="linkhead" href="recipe.php?recipe="><?php echo $products["name"];?></a>
+<?php }?>
+    
   </div>
   </div>
   <button class="tablinks" onclick="window.location.href='account_page.php'">Create account</button>

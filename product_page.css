@@ -30,4 +30,8 @@ body{
 {
     border: medium solid #000000;
     background-color: whitesmoke;
+    align:"left" ;
+    valign:"top" ;
+    width:"700";
+    height:"500";
 }

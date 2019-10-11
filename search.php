@@ -14,12 +14,9 @@
     <div class="dropdown-search">
 <select name="category1" id="category-select">
     <option value="">select a category</option>
-    <option value="category1">category1</option>
-    <option value="category1">category1</option>
-    <option value="category1">category1</option>
-    <option value="category1">category1</option>
-    <option value="category1">category1</option>
-    <option value="category1">category1</option>
+    <?php foreach (getAllProducts() as $products) {?>
+    <option id="linkhead" href="recipe.php?recipe="><?php echo $products["name"];?></option>
+    <?php }?>
 </select>
 
   

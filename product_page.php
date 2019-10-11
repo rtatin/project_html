@@ -18,10 +18,10 @@
         </th>
     </tr></thead>
     <tbody><tr>
-        <td id="tableau" align="center", width="700", height="500">
+        <td id="tableau" >
             <img src='https://www.eminence.fr/img/i-11733-10/chemise_homme_manches_longues_eminence_-_coton_melange_-_palmier_bleu_60.jpg' align='center' height="300" width="300"/>
         </td>
-        <td id="tableau"align="left" valign="top" width="700", height="500">
+        <td id="tableau">
             <br>
             <br>
             <br>
@@ -77,10 +77,10 @@ Description: Chemise coupe droite, solide et anti-transpirante
         </th>
     </tr></thead>
     <tbody><tr>
-        <td id="tableau" align="center", width="700", height="500">
+        <td id="tableau" >
             <img src='https://vstreet.eu/375-large_default/pantalon-moto-vstreet-chino-beige.jpg' align='center' height="300" width="300"/>
         </td>
-        <td id="tableau" align="left", valign="top", width="700", height="500">
+        <td id="tableau" >
             <br>
             <br>
             <br>
@@ -134,8 +134,8 @@ Description: Pantalon chino slim, solide en coton (90%) et polyester (10%)
         <th colspan="2", height="70"><p style="color: rgb(11, 52, 129)";><font face="Calibri", size="6">Chaussures</font></p></th>
     </tr></thead>
     <tbody><tr>
-        <td id="tableau" align="center", width="700", height="500"><img src='https://www.julesjenn.com/wordpress/wp-content/uploads/2017/05/chaussures-bateau-cuir-cognac-1.jpg' align='center' height="300" width="300"/></td>
-        <td id="tableau" align="left", valign="top", width="700", height="500">
+        <td id="tableau" ><img src='https://www.julesjenn.com/wordpress/wp-content/uploads/2017/05/chaussures-bateau-cuir-cognac-1.jpg' align='center' height="300" width="300"/></td>
+        <td id="tableau" >
             <br>
             <br>
             <br>
