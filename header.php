@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Website</title>
+    <title >SOS</title>
     <link rel="stylesheet" href="head.css" />
     
 </head>
@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <span>Website</span>
+            <span id="websitename">SOS</span>
             <div class="menuCategory">
   <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
   <div class="dropdown">
