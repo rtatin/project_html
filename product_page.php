@@ -174,6 +174,15 @@ Description: Chaussures type bateau, en cuir de veau teinté
 </table>
 </div>
 </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 <?php include 'footer.php';?>
 </html>
