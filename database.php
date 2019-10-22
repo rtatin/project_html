@@ -79,4 +79,20 @@ function executeQuery($query, $params)
     }
 }
 
+function getAllRange(){
+    $query='select * from ranges';
+    return executeQuery($query,null);
+}
+
+function getProductsByRangeName($rangeName){
+    $params = array('recipeCode' => $rangeName);
+    $query = '
+select p.* from products p
+INNER JOIN ranges r ON p.range_id = r.id
+WHERE r.name = :rangeName';
+return executeQuery($query, $params);
+}
+
+
+
 ?>

@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>Website</title>
+    <title>SOS</title>
     <link rel="stylesheet" href="head.css" />
     
 </head>
@@ -13,14 +13,14 @@
 <body>
     <header>
         <nav>
-            <span>Website</span>
+            <span>SOS</span>
             <div class="menuCategory">
   <button class="tablinks" onclick="window.location.href='search.php'">Search</button>
   <div class="dropdown">
   <button class="tablinks" onclick="window.location.href='product_page.php'">product page</button>
   <div class="dropdown-content">
-    <?php foreach (getAllProducts() as $products) {?>
-    <a id="linkhead" href="recipe.php?recipe="><?php echo $products["name"];?></a>
+    <?php foreach (getAllRange() as $range) {?>
+    <a id="linkhead" href="recipe.php?recipe="><?php echo $range["name"];?></a>
 <?php }?>
     
   </div>
@@ -29,7 +29,7 @@
   <button class="tablinks" onclick="window.location.href='cart_page.php'">cart page</button>
    </nav>
         <div class login_box>
-        <form class="identify">
+        <form class="identify" >
         <table>
             
         <tr>
