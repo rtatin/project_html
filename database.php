@@ -84,12 +84,12 @@ function getAllRange(){
     return executeQuery($query,null);
 }
 
-function getProductsByRangeName($rangeName){
-    $params = array('recipeCode' => $rangeName);
+function getProductsByRangeName($rangeId){
+    $params = array('rangeID' => $rangeId);
     $query = '
 select p.* from products p
 INNER JOIN ranges r ON p.range_id = r.id
-WHERE r.name = :rangeName';
+WHERE r.id = :rangeID';
 return executeQuery($query, $params);
 }
 
