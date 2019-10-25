@@ -137,6 +137,5 @@ INSERT INTO `order_products` (order_id, product_id, quantity, unit_price)
   VALUES (1,1,1,57.08);
 INSERT INTO `order_products` (order_id, product_id, quantity, unit_price)
   VALUES (1,2,3,46.22);
-
 INSERT INTO `order_products` (order_id, product_id, quantity, unit_price)
   VALUES (2,1,2,50);

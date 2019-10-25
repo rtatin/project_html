@@ -13,7 +13,7 @@
         </div>
         <button class="buttonFooter" onclick="window.location.href='#top'">Haut de page</button>
 
-        <p>Nom du site - Tous droits réservés</p>
+        <p>SOS - Tous droits réservés</p>
         
       </footer>
 </body>

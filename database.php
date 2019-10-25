@@ -50,13 +50,10 @@ function getNameByProductId($productId)
     return executeQuery($query, $params);
 }
 
-function getSizeByProductId($productId)
+function getAllProductByOrderId($orderId)
 {
-    $params = array('productCode' => $recipeId);
-    $query = "
-        select p.size.*
-          from product p
-          where p.id = '".$productId."'
+    $params = array('orderId' => $orderId);
+    $query = "SELECT * FROM `order_products` WHERE order_id='".$orderId."'
     ";
     return executeQuery($query, $params);
 }
