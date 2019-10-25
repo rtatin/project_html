@@ -19,7 +19,7 @@
         </th>
     </tr></thead>
     <tbody><tr>
-        <td id="tableau" >
+        <td id="image" >
             <img src='https://www.eminence.fr/img/i-11733-10/chemise_homme_manches_longues_eminence_-_coton_melange_-_palmier_bleu_60.jpg' align='center' height="300" width="300"/>
         </td>
         <td id="tableau">
@@ -37,25 +37,29 @@
             </dd>
             <br>
             <br>
-            <br>
             <dd>
-            <textarea style="border-style: none;" cols = 80 rows = 5>
+            <a style="border-style: none;" cols = 80 rows = 5>
             description:
             <?php echo $products["description"];?>
-            </textarea>
+            </a>
             </dd>
-            <br>
             <br>
             <br>
             <dd>
-            <textarea style="border-style: none;" cols = 10 rows = 2>
+            <a style="border-style: none;" cols = 10 rows = 2>
+            prix:
             <?php echo $products["unit_price"];?>
-            </textarea>
+            €
+            </a>
             </dd>
             <br>
             <br>
-            <br>
-            <br>
+            <a id=quantity>
+            <input id="moins" type="button" value="-" />
+            <input id ="result" type="texte" value="1" maxlength="2" />
+            <input id="plus" type="button" value="+" />
+            </a>
+
             <dd><button><a href=''>Add to Cart</a></button></dd>
         </td>
     </tr></tbody>
@@ -65,6 +69,13 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <?php }?>
 
 

@@ -14,13 +14,17 @@
         </tr>
     </thead>
     <tbody>
+    <?php 
+    
+        foreach (getProductsByOrderId($_GET["order_id"]) as $product) {?>
         <tr>
-            <td width="25%">Shoes</td>
+            <td width="25%"><a><?php echo $product["product_id"];?></a></td>
             <td width="15%">5</td>
             <td width="15%">10€</td>
             <td width="20%">50€</td>
             <td><input type="button" width="20%" position="center" value="Remove"></td>
         </tr>
+        <?php }?>
     </tbody>
 </table>
 </body>

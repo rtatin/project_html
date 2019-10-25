@@ -22,12 +22,24 @@ body{
 
 #table1
 {
+    width: 80%;
     border: medium solid #000000;
     background-color: rgb(247, 176, 176);
 }
 
 #tableau
 {
+    width: 80%;
+    border: medium solid #000000;
+    background-color: whitesmoke;
+    align:"left" ;
+    valign:"top" ;
+    width:"700";
+    height:"500";
+}
+#image
+{
+    width: 10%;
     border: medium solid #000000;
     background-color: whitesmoke;
     align:"left" ;
@@ -41,3 +53,14 @@ color:rgb(11, 52, 129);
 
 font: face="Calibri", size="6"
 }
+
+#quantity{
+    font-size: 2.5em;
+    width: 50px;
+    margin: 0;
+  }
+  
+  input#result{
+    width: 50px;
+    text-align: center;
+  }
