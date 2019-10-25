@@ -55,9 +55,7 @@
             <br>
             <br>
             <a id=quantity>
-            <input id="moins" type="button" value="-" />
             <input id ="result" type="texte" value="1" maxlength="2" />
-            <input id="plus" type="button" value="+" />
             </a>
 
             <dd><button><a href=''>Add to Cart</a></button></dd>
