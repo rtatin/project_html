@@ -25,6 +25,14 @@ function getAllProductByOrderId($orderId)
     return executeQuery($query, $params);
 }
 
+function getAllProductByRange($rangeID)
+{
+    $params = array('rangeID' => $rangeID);
+    $query = "SELECT * FROM products WHERE products.range_id=:rangeID";
+
+return executeQuery($query, $params);
+}
+
 function executeQuery($query, $params)
 {
     //FIXME: change dbname by your own dbname
