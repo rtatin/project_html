@@ -27,7 +27,7 @@
 
   </div>
 
-    <input id="search_input" type="text" name="search" onkeyup="searchFct()" placeholder="What are you looking for?"/>
+    <input id="search_box" type="text" name="search" onkeyup="searchFonction()" placeholder="What are you looking for?"/>
     <input id="searchButton" type="submit" name="search-button" value="search"/>
 
 <ul id="myUL">
@@ -42,27 +42,26 @@
 <?php foreach (getAllProducts() as $product) {?>
 
 
-    <li><a href="product_page.php#cat_<?php echo $product['name'] ?>"><?php echo $product["name"];?></a></li>
+    <li><a><?php echo $product["name"];?></a></li>
     <?php }}?>
 
 </ul>
 
 <script>
+function searchFonction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("search_box");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
 
-function searchFct() {
-    var element, toUpper, elementId, Id, TagName, tamp, txtValue;
-    element = document.getElementById("search_input");
-    toUpper = element.value.toUpperCase();// permet de ne pas se soucier de la majuscule
-    elementId = document.getElementById("myUL");
-    Id = elementId.getElementsByTagName("li");
-
-    for (tamp = 0; tamp < Id.length; i++) {
-        TagName = Id[tamp].getElementsByTagName("a")[0];
-        txtValue = TagName.textContent || TagName.innerText;
-        if (txtValue.toUpperCase().indexOf(toUpper) > -1) {
-            Id[tamp].style.display = "";
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
         } else {
-            Id[tamp].style.display = "none";
+            li[i].style.display = "none";
         }
     }
 }
@@ -83,11 +82,17 @@ function replaceQueryParam(param, newval, search) {
     return (query.length > 2 ? query + "&" : "?") + (newval ? param + "=" + newval : '');
 }
 
+
+
+
 </script>
-</div>
+
+    
+
 </body>
 
 
+</div>
 <?php include 'footer.php';?>
 </html>
 
