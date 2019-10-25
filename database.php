@@ -17,39 +17,6 @@ function getProductById($productId)
     return executeQuery($query, $params);
 }
 
-function getPriceByProductId($productId)
-{
-    $params = array('productCode' => $recipeId);
-    $query = "
-        select p.unit_price
-          from product p
-          where p.id = '".$productId."'
-    ";
-    return executeQuery($query, $params);
-}
-
-function getColorsByProductId($productId)
-{
-    $params = array('productCode' => $recipeId);
-    $query = "
-        select p.Colors.*
-          from product p
-          where p.id = '".$productId."'
-    ";
-    return executeQuery($query, $params);
-}
-
-function getNameByProductId($productId)
-{
-    $params = array('productCode' => $recipeId);
-    $query = "
-        select p.name
-          from product p
-          where p.id = '".$productId."'
-    ";
-    return executeQuery($query, $params);
-}
-
 function getAllProductByOrderId($orderId)
 {
     $params = array('orderId' => $orderId);
@@ -89,20 +56,5 @@ INNER JOIN ranges r ON p.range_id = r.id
 WHERE r.id = :rangeID';
 return executeQuery($query, $params);
 }
-
-function updateQuantityByProduct($productId, $orderId){
-    $params = array('ProductID' => $productId,'OrderID' => $orderId);
-    $query = 'SELECT quantity FROM `order_products`
-    where product_id= :productID and order_id=:orderID';
-    $bdd = new PDO('mysql:host=localhost;dbname=sos','root','');
-    $oldQuantity=executeQuery($query, $params);
-    $newQuantity=0;
-    $newQuantity=$oldQuantity;
-    $request="UPDATE order_products set quantity='".$newQuantity."' where product_id= :productID and order_id=:orderID";
-    $response = $bdd->exec($request);
-
-var_dump($response);
-}
-
 
 ?>
