@@ -32,7 +32,6 @@ function executeQuery($query, $params)
     try {
         $res = $bdd->prepare($query);
         $res->execute($params);
-
         $datas = $res->fetchAll();
 
         $res->closeCursor();
@@ -56,5 +55,13 @@ INNER JOIN ranges r ON p.range_id = r.id
 WHERE r.id = :rangeID';
 return executeQuery($query, $params);
 }
+
+function getQuantityByProduct($productId, $orderId, $quantityToAdd){
+    $params = array('ProductID' => $productId,'OrderID' => $orderId);
+    $query = 'SELECT quantity FROM `order_products`
+    where product_id= :ProductID and order_id=:OrderID';
+    return executeQuery($query, $params);
+}
+
 
 ?>

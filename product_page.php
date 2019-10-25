@@ -9,7 +9,6 @@
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
-
 <?php foreach (getAllProducts() as $products) {?>
     <center>
 <table id="table1" border>
@@ -54,11 +53,10 @@
             </dd>
             <br>
             <br>
-            <a id=quantity>
-            <input id ="result" type="texte" value="1" maxlength="2" />
-            </a>
-
-            <dd><button><a href=''>Add to Cart</a></button></dd>
+            <form method="post" action="quantityToAdd.php">
+            Quantité : <input type="number" name="quantite" size="3"><br>
+            <input type="submit" value="OK">
+            </form>
         </td>
     </tr></tbody>
 </table>
