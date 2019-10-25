@@ -16,7 +16,7 @@ body
 }
 
 
-#search_box {
+#search_input {
   width: 79%;
   border: 3px solid #00B4CC;
   border-right: none;
@@ -29,7 +29,7 @@ body
   margin: 0;
 }
 
-#search_box:focus{
+#search_input:focus{
   color: #00B4CC;
 }
 
