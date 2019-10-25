@@ -8,7 +8,6 @@
 </head>
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
-<br>
 <?php foreach (getAllProducts() as $products) {?>
     <center>
 <table id="table1" border>
