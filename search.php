@@ -50,19 +50,15 @@
 <script>
 
 function searchFct() {
-    var element, toUpper, elementId, Id, TagName, tamp, txtValue;
-    element = document.getElementById("search_input");
-    toUpper = element.value.toUpperCase();// permet de ne pas se soucier de la majuscule
-    elementId = document.getElementById("myUL");
-    Id = elementId.getElementsByTagName("li");
-
-    for (tamp = 0; tamp < Id.length; i++) {
-        TagName = Id[tamp].getElementsByTagName("a")[0];
-        txtValue = TagName.textContent || TagName.innerText;
-        if (txtValue.toUpperCase().indexOf(toUpper) > -1) {
-            Id[tamp].style.display = "";
+    var toUpper = document.getElementById("search_input").value.toLowerCase();// permet de ne pas se soucier de la majuscule
+    var all_li = document.getElementById("myUL").getElementsByTagName("li");
+    
+    for (var i = 0; i < all_li.length; i++) {
+        var TagName = all_li[i].getElementsByTagName("a")[0];
+        if (TagName.innerText.toLowerCase().indexOf(toUpper) > -1) {
+            all_li[i].style.display = "";
         } else {
-            Id[tamp].style.display = "none";
+            all_li[i].style.display = "none";
         }
     }
 }
