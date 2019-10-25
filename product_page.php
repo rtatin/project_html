@@ -9,14 +9,7 @@
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
 <br>
-<<<<<<< HEAD
 <?php foreach (getAllProducts() as $products) {?>
-=======
-<?php foreach (getAllRange() as $range) {?>
-        <h1 id="cat_<?php echo $range["id"] ?>"> <?php echo $range["name"];?> </h1>
-
-<?php foreach (getAllProductByRange($range["id"]) as $products) {?>
->>>>>>> php_v1
     <center>
 <table id="table1" border>
     <thead><tr>
@@ -54,7 +47,8 @@
             <dd>
             <a style="border-style: none;" cols = 10 rows = 2>
             prix:
-            <?php echo $products["unit_price"];?>€
+            <?php echo $products["unit_price"];?>
+            €
             </a>
             </dd>
             <br>
@@ -68,7 +62,6 @@
 </table>
 </div>
 </center>
-<?php }?>
 <br>
 <br>
 <br>
