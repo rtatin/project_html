@@ -20,7 +20,7 @@
   <button class="tablinks" onclick="window.location.href='product_page.php'">product page</button>
   <div class="dropdown-content">
     <?php foreach (getAllRange() as $range) {?>
-    <a id="linkhead" href="#cat_<?php echo $range['id'] ?>"> <?php echo $range["name"];?></a>
+    <a id="linkhead" href="product_page.php#cat_<?php echo $range['id'] ?>"> <?php echo $range["name"];?></a>
 <?php }?>
     
   </div>

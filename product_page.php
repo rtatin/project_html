@@ -8,7 +8,11 @@
 </head>
 <body id="body1">
 <center><caption><font size="25" face="Calibri"><b>Nos Produits</b></font></caption></center>
-<?php foreach (getAllProducts() as $products) {?>
+<br>
+<?php foreach (getAllRange() as $range) {?>
+        <h1 id="cat_<?php echo $range["id"] ?>"> <?php echo $range["name"];?> </h1>
+
+<?php foreach (getAllProductByRange($range["id"]) as $products) {?>
     <center>
 <table id="table1" border>
     <thead><tr>
@@ -46,21 +50,22 @@
             <dd>
             <a style="border-style: none;" cols = 10 rows = 2>
             prix:
-            <?php echo $products["unit_price"];?>
-            €
+            <?php echo $products["unit_price"];?>€
             </a>
             </dd>
             <br>
             <br>
-            <form method="post" action="quantityToAdd.php">
-            Quantité : <input type="number" name="quantite" size="3"><br>
-            <input type="submit" value="OK">
-            </form>
+            <a id=quantity>
+            <input id ="result" type="texte" value="1" maxlength="2" />
+            </a>
+
+            <dd><button><a href=''>Add to Cart</a></button></dd>
         </td>
     </tr></tbody>
 </table>
 </div>
 </center>
+<?php }?>
 <br>
 <br>
 <br>
