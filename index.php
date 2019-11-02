@@ -37,18 +37,18 @@
 
 
 		<?php 
-		include('C:\wamp64\www\projet_web\views\header.php');
+		include('views\header.php');
 		?> 
 
 
 		<?php 
 		if (file_exists('views/'.$page.'.php')){	include ('views/'.$page.'.php');	}
-		else {	include ('C:\wamp64\www\projet_web\views\acceueil.php');	}
+		else {	include ('views\acceueil.php');	}
 
 		?> 
 
 		<?php 
-		include('C:\wamp64\www\projet_web\views\footer.php');
+		include('views\footer.php');
 		?> 
 
 </html>
