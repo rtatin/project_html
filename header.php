@@ -39,10 +39,10 @@
 
         <tr>
         <td>
-            <input id="textbox" type="text" placeholder="Username" name="" value="">
+            <input id="textbox" type="text" placeholder="Username" name="identifiant" value="">
         </td>
         <td>
-            <input id="textbox" type="password" placeholder="Password" name="" value="">
+            <input id="textbox" type="password" placeholder="Password" name="mdp" value="">
         </td>
         <td>
             <input id="submithead" type="submit"  name="" value="send">

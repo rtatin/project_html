@@ -1,15 +1,13 @@
-body
-{
+#body2{
+
     margin: 0;
     padding: 0;
     background: #efefef;
     font-size: 16px;
     color: #777;
     font-family: sans-serif;
-    position:relative;
+    
 }
-
-
 
 h1
 {
@@ -22,7 +20,7 @@ h1
 {
     display: block;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 4px;
     width: 220px;
     height: 32px;
