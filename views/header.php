@@ -13,11 +13,9 @@
 
 <body>
     <nav>
-    <span>SOS</span>
-
-
+    <span > <a href="index.php?page=accueil">SOS  </a> </span>
+    
 <?php 
-	if ($co==false){
 		echo '
 		<div class login_box>
         <form class="identify" >
@@ -49,15 +47,8 @@
 </div>
 
 		' ;
-	}
-		
-	else {
-		echo '
-		<a href="index.php?page=accueil">  <form action="index.php?page=accueil" id="deconnexion" method="post"> 
-		     <input type="hidden" type="text" name="deco" value="decon"/>
-	    	<input type="submit" value="Me déconnecter" /></form> </a>
-		';
-}?>
+	
+?>
 	</div>
 
 </div>
@@ -68,7 +59,7 @@
   <button class="tablinks" onclick="window.location.href='index.php?page=product_page.php'">product page</button>
   <div class="dropdown-content">
     <?php foreach (getAllRange() as $range) {?>
-    <a id="linkhead" href="product_page.php#cat_<?php echo $range['id'] ?>"> <?php echo $range["name"];?></a>
+    <a id="linkhead" href="index.php?page=product_page.php#cat_<?php echo $range['id'] ?>"> <?php echo $range["name"];?></a>
 <?php }?>
     
   </div>

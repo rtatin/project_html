@@ -1,5 +1,4 @@
-<?php include_once 'database.php';?>
-<?php require "header.php";?>
+
 <head>
 <link rel="stylesheet" href="cart_page.css" />
 </head>
@@ -34,5 +33,5 @@ Total order price:
         <?php echo $total_order?>€<br>
         <input type="button" width="10%" position="center" value="Place order">
 </body>
-<?php include 'footer.php';?>
+
 </html>

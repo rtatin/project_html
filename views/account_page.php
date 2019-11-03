@@ -1,7 +1,4 @@
 
-<?php require "header.php";?>
-
-
 
 <html>
 <div id="create_account" > 
@@ -32,5 +29,5 @@
 </body>
 
 </div>
-<?php include 'footer.php';?>
+
 </html>

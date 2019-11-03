@@ -1,4 +1,4 @@
-<?php require "header.php";?>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,7 +17,7 @@
 <table id="table1" border>
     <thead><tr>
         <th colspan="2", height="70">
-            <p id="titre"> <?php echo $products["name"];?></p>
+            <p id="cat_<?php echo $products["name"] ?>"> <?php echo $products["name"];?></p>
         </th>
     </tr></thead>
     <tbody><tr>
@@ -77,7 +77,5 @@
 
 <?php }?>
 
-
 </body>
-<?php include 'footer.php';?>
 </html>

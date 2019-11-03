@@ -1,15 +1,10 @@
+<!DOCTYPE html>
 
-
-
-<?php require "header.php";?>
 <html>
-<head>
-    <title>search</title>
-    <link rel="stylesheet" href="search.css" />
-</head>
+    <head>
+        <link rel="stylesheet" href="search.css" />
+    </head>
 
-
- 
 <body>
 
 
@@ -42,7 +37,7 @@
 <?php foreach (getAllProducts() as $product) {?>
 
 
-    <li><a href="product_page.php#cat_<?php echo $product['name'] ?>"><?php echo $product["name"];?></a></li>
+    <li><a href="index.php?page=product_page.php#cat_<?php echo $product['name'] ?>"><?php echo $product["name"];?></a></li>
     <?php }}?>
 
 </ul>
@@ -82,9 +77,6 @@ function replaceQueryParam(param, newval, search) {
 </script>
 </div>
 </body>
-
-
-<?php include 'footer.php';?>
 </html>
 
 
