@@ -20,12 +20,12 @@ if ($quantityToAdd == 0){
 
 <div class="bouton">
   <p>
-   <a href="product_page.php">Retour à la liste des produits</a>
+   <a href="index.php?page=product_page.php">Retour à la liste des produits</a>
  </p>
 </div>
 <div class="bouton">
   <p>
-   <a href="cart_page.php">Aller à votre panier</a>
+   <a href="index.php?page=cart_page.php">Aller à votre panier</a>
  </p>
 </div>
 </html>

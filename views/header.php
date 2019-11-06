@@ -16,9 +16,10 @@
     <span > <a href="index.php?page=accueil">SOS  </a> </span>
     
 <?php 
+    if ($isConected==false){
 		echo '
 		<div class login_box>
-        <form class="identify" >
+        <form class="identify" method="post">
         <table>
             
         <tr>
@@ -33,7 +34,7 @@
             <input id="textbox" type="password" placeholder="Password" name="mdp" value="">
         </td>
         <td>
-            <input id="submithead" type="submit"  name="" value="send">
+            <input id="submithead" type="submit"  name="" value="Envoyer" >
         </td>
         </tr>
 
@@ -46,9 +47,13 @@
 </form>
 </div>
 
-		' ;
-	
-?>
+        ' ;
+    }
+    else {
+		echo '
+		<a conecter bitch </a>
+		';
+}?>
 	</div>
 
 </div>

@@ -62,8 +62,7 @@ function updated(el){
     
     console.log(el); 
     console.log(el.dataset.val);
-    
-    window.location = './search.php' + replaceQueryParam('range', el.dataset.val, window.location.search)
+    window.location = '.views/search.php' + replaceQueryParam('range', el.dataset.val, window.location.views/search)
 }
 
 function replaceQueryParam(param, newval, search) {

@@ -1,5 +1,7 @@
 <?php
 
+
+
 function getAllProducts(){
 
     $query='select * from products';
