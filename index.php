@@ -17,7 +17,7 @@
 	if (isset($_POST['stop']) ){			echo "SALUT";}
 
 	
-	if (isset($_SESSION['user_id'])) {		$isConected=true;		}
+	if (isset($_SESSION['user_id'])) {		$isConected=true;	$user_id=$_SESSION['user_id'];	}
 
 	if(isset($_POST['identifiant']) AND isset($_POST['mdp'])  ){    include 'conexion.php';    }
 

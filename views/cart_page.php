@@ -4,6 +4,7 @@
 </head>
 <html>
 <body>
+
 <table class="tableCart">
     <thead>
         <tr>
@@ -16,7 +17,7 @@
     <tbody> 
     <?php $total_order=0?>
      <!-- Pour l'instant, on prend que l'orderID qui est égal à 1 pour afficher dans le panier -->
-    <?php foreach (getAllProductByOrderId(1) as $order_product) {?>
+    <?php foreach (getAllProductById($user_id) as $order_product) {?>
         <tr>
             <td width="25%"><?php echo($order_product['product_id'])?></td>
             <td width="25%"><?php echo($order_product['quantity'])?></td>

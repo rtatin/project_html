@@ -27,6 +27,14 @@ function getAllProductByOrderId($orderId)
     return executeQuery($query, $params);
 }
 
+function getAllProductById($Id)
+{
+    $params = array('Id' => $Id);
+    $query = "SELECT * FROM `order_products` WHERE id='".$Id."'
+    ";
+    return executeQuery($query, $params);
+}
+
 function getAllProductByRange($rangeID)
 {
     $params = array('rangeID' => $rangeID);
