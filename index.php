@@ -10,16 +10,16 @@
 
 
 	$user_id = '';
-	$isConected=false;
+	$isConnected=false;
 	$page='index'; 
 	
 
 	if (isset($_POST['stop']) ){			echo "SALUT";}
 
 	
-	if (isset($_SESSION['user_id'])) {		$isConected=true;	$user_id=$_SESSION['user_id'];	}
+	if (isset($_SESSION['user_id'])) {		$isConnected=true;	$user_id=$_SESSION['user_id'];	}
 
-	if(isset($_POST['identifiant']) AND isset($_POST['mdp'])  ){    include 'conexion.php';    }
+	if(isset($_POST['identifiant']) AND isset($_POST['mdp'])  ){    include 'connection.php';    }
 
 	if (isset($_GET['page'])){		$page=$_GET['page'];	} 
 ?>
@@ -45,7 +45,7 @@
 
 		<?php 
 		if (file_exists('views/'.$page)){	include ('views/'.$page);	}
-		else {	include ('views/acceueil.php');	}
+		else {	include ('views/accueil.php');	}
 
 		?> 
 

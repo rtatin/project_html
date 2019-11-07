@@ -74,10 +74,10 @@ WHERE r.id = :rangeID';
 return executeQuery($query, $params);
 }
 
-function getQuantityByProduct($productId, $orderId, $quantityToAdd){
-    $params = array('ProductID' => $productId,'OrderID' => $orderId);
+function getQuantityByProduct($productId, $Id, $quantityToAdd){
+    $params = array('ProductID' => $productId,'ID' => $Id);
     $query = 'SELECT quantity FROM `order_products`
-    where product_id= :ProductID and order_id=:OrderID';
+    where product_id= :ProductID and id=:ID';
     return executeQuery($query, $params);
 }
 

@@ -8,7 +8,7 @@
                 if($donnee['username']==$identifiant AND $donnee['password']==$mdp){
                     $user_id = $donnee['id'];
                     $_SESSION['user_id'] = $user_id;
-                    $isConected=true;
+                    $isConnected=true;
                 }
                 $donnee = $result->fetch();
             } 

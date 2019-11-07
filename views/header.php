@@ -16,7 +16,7 @@
     <span > <a href="index.php?page=accueil">SOS  </a> </span>
     
 <?php 
-    if ($isConected==false){
+    if ($isConnected==false){
 		echo '
 		<div class login_box>
         <form class="identify" method="post">
@@ -53,7 +53,7 @@
             echo '
             <div class login_box>
             <a href="index.php?page=accueil">
-              <form method="post" action="deconexion.php" > 
+              <form method="post" action="disconnection.php" > 
                  <input type="hidden" type="text" name="deco" value="deco"/>
                 <input type="submit" value="Me déconnecter" />
                 </form>

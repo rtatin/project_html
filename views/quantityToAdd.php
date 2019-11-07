@@ -4,10 +4,11 @@
 include_once 'database.php';
 $quantityToAdd=0;
 $quantityToAdd= $_POST['quantite']; 
-$oldQuantity=getQuantityByProduct(1, 1, $quantityToAdd)[0][0];
+ECHO($user_id);
+$oldQuantity=getQuantityByProduct(1, $user_id, $quantityToAdd)[0][0];
 $oldQuantity=(int)$oldQuantity;
 $newQuantity=$oldQuantity+(int)$quantityToAdd;
-$request="UPDATE order_products set quantity='".$newQuantity."' where product_id= 1 and order_id=1";
+$request="UPDATE order_products set quantity='".$newQuantity."' where product_id= 1 and id=$user_id";
 $bdd = new PDO('mysql:host=localhost;dbname=sos', 'root','') ;
 $response = $bdd->exec($request);
 
