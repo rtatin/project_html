@@ -14,13 +14,9 @@
 	$page='index'; 
 	
 
-	if (isset($_POST['stop']) ){			echo "SALUT";        }
+	if (isset($_POST['stop']) ){			echo "SALUT";}
 
-	if (isset($_GET['deco']) ){
-    		session_unset ();
-			session_destroy ();
-    }
-
+	
 	if (isset($_SESSION['user_id'])) {		$isConected=true;		}
 
 	if(isset($_POST['identifiant']) AND isset($_POST['mdp'])  ){    include 'conexion.php';    }
@@ -37,7 +33,6 @@
 		
 
 		<?php 
-		
 		
 		if (file_exists('actions/'.$page.'.php')){ 	include ('actions/'.$page.'.php');	
 		}

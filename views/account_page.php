@@ -9,8 +9,9 @@
     </head>
 
 <body id="body2">
-<h1>Create account</h1>
+
 			<form method="POST" action="index.php?page=creeCompte" class="formulaire login-form" required >
+            <h1>Create account</h1>
 				<br>
                 <p>E-mail</p>
 	  			<input id="useninfo" class="login-input" type="mail" name="mail" placeholder="Adresse mail" required>

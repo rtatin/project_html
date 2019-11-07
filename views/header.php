@@ -49,11 +49,19 @@
 
         ' ;
     }
-    else {
-		echo '
-		<a conecter bitch </a>
-		';
-}?>
+	else {
+            echo '
+            <div class login_box>
+            <a href="index.php?page=accueil">
+              <form method="post" action="deconexion.php" > 
+                 <input type="hidden" type="text" name="deco" value="deco"/>
+                <input type="submit" value="Me déconnecter" />
+                </form>
+                </a>
+                </div>
+            ';
+    }
+?>
 	</div>
 
 </div>
