@@ -1,12 +1,9 @@
 <?php 
 
-	//TODO include database.php file
 	include 'database.php' ;
-	try	{			$bdd = new PDO('mysql:host=localhost;dbname=sos;charset=utf8', 'root', '');		}
-	catch (Exception $e)	{	        die('Erreur : ' . $e->getMessage());		}
 	//TODO start session
 	session_start ();
-
+	
 
 
 	$user_id = '';

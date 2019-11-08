@@ -2,6 +2,7 @@
 			
             $identifiant = $_POST['identifiant'] ;
             $mdp = $_POST['mdp'] ;
+            $bdd=loadBDD();
             $result = $bdd->query('SELECT * FROM users');
             $donnee = $result->fetch();
             while($donnee != null){

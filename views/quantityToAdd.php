@@ -8,6 +8,7 @@ $quantityToAdd=0;
 $quantityToAdd= $_POST['quantite']; 
 $tampon=0;
 
+$bdd=loadBDD();
 $reponse = $bdd->prepare("SELECT * FROM order_products WHERE order_id = $user_id and product_id=$pId");
 $reponse->execute(array(
 	));
@@ -54,12 +55,12 @@ if ($quantityToAdd == 0){
 
 <div class="bouton">
   <p>
-   <a href="index.php?page=product_page.php">Retour à la liste des produits</a>
+   <a id=kl href="index.php?page=product_page.php">Retour à la liste des produits</a>
  </p>
 </div>
 <div class="bouton">
   <p>
-   <a href="index.php?page=cart_page.php">Aller à votre panier</a>
+   <a id=kl href="index.php?page=cart_page.php">Aller à votre panier</a>
  </p>
 </div>
 </html>

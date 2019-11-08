@@ -17,6 +17,7 @@
     </thead>
     <tbody> 
     <?php if (isset($_POST['delete'])){
+        $bdd=loadBDD();
                     $bdd->query(" DELETE FROM `order_products` where product_id=".$_POST['delete']);
                 }
                 
@@ -25,7 +26,11 @@
      <!-- Pour l'instant, on prend que l'orderID qui est égal à 1 pour afficher dans le panier -->
     <?php foreach (getAllProductById($user_id) as $order_product) {?>
         <tr>
-            <td width="25%"><?php echo($order_product['product_id'])?></td>
+            <td width="25%">
+            <?php 
+                        $image=$order_product['product_id'];
+                        echo '<img src="Images/'.$image.'"png width="25%">';?>
+            </td>
             <td width="25%"><?php echo($order_product['quantity'])?></td>
             <td width="25%"><?php echo($order_product['unit_price'])?>€</td>
             <?php $total_price=$order_product['unit_price']*$order_product['quantity']?>

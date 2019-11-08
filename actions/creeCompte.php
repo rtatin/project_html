@@ -1,9 +1,9 @@
 <?php
-// On teste si le le client a appuye sur le bouton valider
+
 if(isset($_POST['validation'])){
 
-	// On verifie que les deux mots de passe saisis sont identiques
-	if( $_POST['password'] == $_POST['confirm-password']){/*Manipulation de la BDD*/
+	if( $_POST['password'] == $_POST['confirm-password']){
+		$bdd=loadBDD();
 		$reponse = $bdd->prepare("SELECT * FROM users WHERE username = :username OR email = :email");
 		$reponse->execute(array(
 			'username'=>$_POST['username'],

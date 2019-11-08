@@ -43,16 +43,22 @@ function getAllProductByRange($rangeID)
 return executeQuery($query, $params);
 }
 
+function loadBDD() {
+    $bdd = new PDO('mysql:host=localhost;dbname=sos', 'root','') ;
+    return ($bdd);
+}
+
 function executeQuery($query, $params)
 {
     //FIXME: change dbname by your own dbname
-    $bdd = new PDO('mysql:host=localhost;dbname=sos', 'root','') ;
+    $bdd = loadBDD();
     try {
         $res = $bdd->prepare($query);
         $res->execute($params);
         $datas = $res->fetchAll();
 
         $res->closeCursor();
+        
 
         return $datas;
     } catch (PDOException $e) {
@@ -79,6 +85,10 @@ function getQuantityByProduct($productId, $Id){
     $query = 'SELECT quantity FROM `order_products`
     where product_id= :ProductID and id=:ID';
     return executeQuery($query, $params);
+}
+function getAllUser(){
+    $query='select * from users';
+    return executeQuery($query,null);
 }
 
 

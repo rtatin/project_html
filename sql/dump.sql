@@ -102,10 +102,10 @@ INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('chemise', null);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('t-shirt', 1);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('pantalon', 1);
 
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('chemise blanche','description',2,12);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt noir','description2',3,29.99);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('jean','description',4,49.99);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt orange','description2',3,29.99);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('chemise blanche','description',1,12);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt noir','description2',2,29.99);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('jean','description',3,49.99);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt orange','description2',4,29.99);
 
 
 

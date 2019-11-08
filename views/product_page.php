@@ -31,18 +31,8 @@
         <td id="tableau">
             <br>
             <br>
-            <dd>
-            <label for="name">Taille:</label>
-            <select name="nom" size="1"><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
-            </dd>
-            <br>
-            <br>
-            <dd>
-            <label for="name">Couleurs:</label>
-            <select name="nom" size="1"><option>Rouge</option><option>Bleu</option><option>Noir</option><option>Blanc</option><option>Camel</option><option>Gris</option></select>
-            </dd>
-            <br>
-            <br>
+            
+            
             <dd>
             <a style="border-style: none;" cols = 80 rows = 5>
             description:

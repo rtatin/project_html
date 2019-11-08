@@ -8,11 +8,10 @@
   <footer>
         <div class="withSeveralLinks">
         <a href="http://www.cdiscount.fr">Our company</a><br/>
-        <button class="buttonFooter" onclick="window.location.href='index.php?page=product_page.php'">our product</button><br/>
+        <a href="index.php?page=product_page.php">our product</a><br/>
         <a href="http://www.cdiscount.fr">Contact us</a><br/>
+        <a href='#top'">Haut de page</a><br/>
         </div>
-        <button class="buttonFooter" onclick="window.location.href='#top'">Haut de page</button>
-
         <p>SOS - Tous droits réservés</p>
         
       </footer>
