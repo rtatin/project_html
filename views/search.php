@@ -27,9 +27,9 @@
 
 <ul id="myUL">
 
-<?php if(isset($_GET["range"])){
+<?php if(isset($_GET["q_range"])){
     
-    foreach (getProductsByRangeName($_GET["range"]) as $product) {?>
+    foreach (getProductsByRangeName($_GET["q_range"]) as $product) {?>
     
     <li><a><?php echo $product["name"];?></a></li>
     <?php }} else{?>
@@ -62,7 +62,7 @@ function updated(el){
     
     console.log(el); 
     console.log(el.dataset.val);
-    window.location = '.views/search.php' + replaceQueryParam('range', el.dataset.val, window.location.views/search)
+    window.location = 'index.php' + replaceQueryParam('q_range', el.dataset.val, window.location.search)
 }
 
 function replaceQueryParam(param, newval, search) {
