@@ -36,8 +36,7 @@
 		
 		if (file_exists('actions/'.$page.'.php')){ 	include ('actions/'.$page.'.php');	
 		}
-		
-		if ($page != 'account_page.php'){		include('views/Header.php');		}
+				include('views/Header.php');		
 
 		
 		?> 

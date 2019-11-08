@@ -53,7 +53,9 @@
             echo '
             <div class login_box>
             <a href="index.php?page=accueil">
+           
               <form method="post" action="disconnection.php" > 
+              <a> hello  , you are connected </a>
                  <input type="hidden" type="text" name="deco" value="deco"/>
                 <input type="submit" value="Me déconnecter" />
                 </form>

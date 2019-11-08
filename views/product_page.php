@@ -21,8 +21,12 @@
         </th>
     </tr></thead>
     <tbody><tr>
+    
         <td id="image" >
-            <img src='https://www.eminence.fr/img/i-11733-10/chemise_homme_manches_longues_eminence_-_coton_melange_-_palmier_bleu_60.jpg' align='center' height="300" width="300"/>
+                    <?php 
+                        $image=$products["id"];
+                        echo '<img src="Images/'.$image.'"png width="100%">';
+                    ?>
         </td>
         <td id="tableau">
             <br>

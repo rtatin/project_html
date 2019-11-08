@@ -107,6 +107,8 @@ INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t
 INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('jean','description',4,49.99);
 INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt orange','description2',3,29.99);
 
+
+
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
