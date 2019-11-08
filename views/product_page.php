@@ -55,7 +55,7 @@
             </dd>
             <br>
             <br>
-            <form method="post" action="index.php?page=quantityToAdd.php">
+            <form action="index.php?page=quantityToAdd.php&idProd=<?php echo $products['id']?>"; method="post">
             Quantité : <input type="number" name="quantite" size="3"><br>
             <input type="submit" value="OK">
             </form>

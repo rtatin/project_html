@@ -27,10 +27,10 @@ function getAllProductByOrderId($orderId)
     return executeQuery($query, $params);
 }
 
-function getAllProductById($Id)
+function getAllProductById($userId)
 {
-    $params = array('Id' => $Id);
-    $query = "SELECT * FROM `order_products` WHERE id='".$Id."'
+    $params = array('userId' => $userId);
+    $query = "SELECT * FROM `order_products` WHERE id='".$userId."'
     ";
     return executeQuery($query, $params);
 }
@@ -74,7 +74,7 @@ WHERE r.id = :rangeID';
 return executeQuery($query, $params);
 }
 
-function getQuantityByProduct($productId, $Id, $quantityToAdd){
+function getQuantityByProduct($productId, $Id){
     $params = array('ProductID' => $productId,'ID' => $Id);
     $query = 'SELECT quantity FROM `order_products`
     where product_id= :ProductID and id=:ID';

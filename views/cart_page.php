@@ -5,6 +5,7 @@
 <html>
 <body>
 
+
 <table class="tableCart">
     <thead>
         <tr>
@@ -15,6 +16,11 @@
         </tr>
     </thead>
     <tbody> 
+    <?php if (isset($_POST['delete'])){
+                    $bdd->query(" DELETE FROM `order_products` where id=".$_POST['delete']);
+                }
+                
+                ?>
     <?php $total_order=0?>
      <!-- Pour l'instant, on prend que l'orderID qui est égal à 1 pour afficher dans le panier -->
     <?php foreach (getAllProductById($user_id) as $order_product) {?>
@@ -25,7 +31,9 @@
             <?php $total_price=$order_product['unit_price']*$order_product['quantity']?>
             <?php $total_order=$total_order+$total_price?>
             <td width="15%"><?php echo $total_price?>€</td>
-            <td><input type="button" width="10%" position="center" value="Remove"></td>
+            <td><form method="POST">
+            <button class="btn" name="delete" value="<?php echo $order_product['id']?>" type="submit">
+                </form></td>
         </tr>
         <?php }?>
     </tbody>
