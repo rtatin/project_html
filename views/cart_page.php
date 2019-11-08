@@ -45,7 +45,6 @@
 </table>
 Total order price:
         <?php echo $total_order?>€<br>
-        <input type="button" width="10%" position="center" value="Place order">
 </body>
 
 </html>
