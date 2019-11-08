@@ -30,7 +30,7 @@ function getAllProductByOrderId($orderId)
 function getAllProductById($userId)
 {
     $params = array('userId' => $userId);
-    $query = "SELECT * FROM `order_products` WHERE id='".$userId."'
+    $query = "SELECT * FROM `order_products` WHERE order_id='".$userId."'
     ";
     return executeQuery($query, $params);
 }

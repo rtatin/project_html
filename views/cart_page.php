@@ -17,7 +17,7 @@
     </thead>
     <tbody> 
     <?php if (isset($_POST['delete'])){
-                    $bdd->query(" DELETE FROM `order_products` where id=".$_POST['delete']);
+                    $bdd->query(" DELETE FROM `order_products` where product_id=".$_POST['delete']);
                 }
                 
                 ?>
@@ -32,7 +32,7 @@
             <?php $total_order=$total_order+$total_price?>
             <td width="15%"><?php echo $total_price?>€</td>
             <td><form method="POST">
-            <button class="btn" name="delete" value="<?php echo $order_product['id']?>" type="submit">
+            <button class="btn" width="10%" position="center" name="delete" value="<?php echo $order_product['product_id']?>" type="submit">Delete</button>
                 </form></td>
         </tr>
         <?php }?>
