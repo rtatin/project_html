@@ -98,12 +98,14 @@ CREATE TABLE `order_products` (
   KEY `IDX_product_order` (`product_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Main range', null);
-INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Second range', 1);
-INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Third range', 1);
+INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('chemise', null);
+INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('t-shirt', 1);
+INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('pantalon', 1);
 
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('test','description',2,57.08);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('test2','description2',3,46.22);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('chemise blanche','description',2,12);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt noir','description2',3,29.99);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('jean','description',4,49.99);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`) VALUES ('t-shirt orange','description2',3,29.99);
 
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');
