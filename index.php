@@ -5,7 +5,6 @@
 	session_start ();
 	
 
-
 	$user_id = '';
 	$isConnected=false;
 	$page='index'; 

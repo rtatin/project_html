@@ -2,6 +2,7 @@
 			
             $identifiant = $_POST['identifiant'] ;
             $mdp = $_POST['mdp'] ;
+            setcookie('pseudo', $identifiant, time() + 365*24*3600, null, null, false, true); 
             $bdd=loadBDD();
             $result = $bdd->query('SELECT * FROM users');
             $donnee = $result->fetch();

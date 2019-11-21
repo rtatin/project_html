@@ -49,11 +49,27 @@
             </dd>
             <br>
             <br>
-            <form action="index.php?page=quantityToAdd.php&idProd=<?php echo $products['id']?>"; method="post">
-            Quantité : <input type="number" name="quantite" size="3"><br>
-            <input type="submit" value="OK">
-            </form>
-            </td>
+            <?php 
+            if ($isConnected==false){
+                echo '
+                <form action="index.php?page=account_page.php"; method="post">
+                Quantité : <input type="number" name="quantite" size="3"><br>
+                <input type="submit" value="Create account">
+                </form>
+                </td>';
+
+
+            }
+            else {
+                echo '
+                <form action="index.php?page=quantityToAdd.php&idProd=' .$products['id'].'"; method="post">
+                Quantité : <input type="number" name="quantite" size="3"><br>
+                <input type="submit" value="Add to cart">
+                </form>
+                </td>';
+            }
+            ?>
+            
     </tr></tbody>
 </table>
 </div>

@@ -8,7 +8,7 @@
     </br>     
 </center>
 <br><br>
-
+<?php include 'product_seen.php'?>
     </body>
 </html>
 

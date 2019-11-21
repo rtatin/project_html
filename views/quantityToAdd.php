@@ -1,3 +1,5 @@
+
+
 <html>
 <link rel="stylesheet" href="quantityToAdd.css"/>
 <?php
@@ -7,6 +9,10 @@ $pId = $_GET["idProd"];
 $quantityToAdd=0;
 $quantityToAdd= $_POST['quantite']; 
 $tampon=0;
+
+
+setcookie('product_id', $pId, time() + 365*24*3600, null, null, false, true); 
+
 
 $bdd=loadBDD();
 $reponse = $bdd->prepare("SELECT * FROM order_products WHERE order_id = $user_id and product_id=$pId");
@@ -21,7 +27,7 @@ if(empty($data)) 						/*Si l'utilisateur n'a pas de panier :*/
 	));
 	$data_products=$reponse->fetch();
   $unit_price=$data_products[0];
-  var_dump($unit_price);
+  
   $reponse->closeCursor();
                 $requete = $bdd->prepare('INSERT INTO order_products(order_id, product_id, quantity,unit_price) VALUES(:order_id, :product_id, :quantity, :unit_price)');
                                 $requete->execute(array(
