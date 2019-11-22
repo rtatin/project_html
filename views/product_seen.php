@@ -44,7 +44,7 @@ if (isset($_COOKIE['product_id']) ){
       </tr>
     
     </table>
-    </br>';}
+    </br>';
 
     $range= $bdd->query("SELECT * FROM products WHERE range_id = $tampon and id != $prodId ") ;
     $categorie=$range->fetch();
@@ -80,7 +80,7 @@ if (isset($_COOKIE['product_id']) ){
     </body>
     
     ';
-    
+    }
 }
 
 $prod->closeCursor();

@@ -8,7 +8,7 @@
     </br>     
 </center>
 <br><br>
-<?php include 'product_seen.php'?>
+<?php if (isset($_COOKIE['product_id'])){ 	(include 'product_seen.php');	}?>
     </body>
 </html>
 
