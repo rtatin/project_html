@@ -44,7 +44,26 @@
       $response = $bdd->exec($request);
 }              
           ?>
+    <?php if (isset($_POST['place_order'] )){
+        if ($_POST['place_order']!=0){
+      $bdd=loadBDD();
+      $requete = $bdd->prepare('INSERT INTO orders (user_id,type,status,amount,billing_adress_id,delivery_adress_id) VALUES (:user_id, :type, :status, :amount, :billing_adress_id, :delivery_adress_id)');
+      $requete->execute(array(
+              'user_id' => $user_id,
+              'type' => "ORDER",
+              'status' => "BILLED",
+              'amount' => $_POST['place_order'],
+              'billing_adress_id' => $billing_adress_id,
+              'delivery_adress_id' => $delivery_adress_id
+              
+      ));
+      echo('ORDER IS PLACED');
 
+      $bdd->query(" DELETE FROM `order_products` where order_id=$user_id");}
+      else{
+        echo('ERROR, EMPTY CART');
+      }
+}   ?>         
 
     <?php $total_order=0?>
     <?php foreach (getAllProductById($user_id) as $order_product) {?>
@@ -69,5 +88,7 @@
 Total order price:
         <?php echo $total_order?>€<br>
 </body>
-<button class="btn" width="10%" position="center" name="place_order" value="<?php echo $order_product['product_id']?>" type="submit">Placer order</button>
+<form method="POST">
+<button class="btn" width="10%" position="center" name="place_order" value="<?php echo $total_order?>" type="submit">Placer order</button>
+</form>
 </html>
