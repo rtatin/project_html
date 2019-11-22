@@ -9,6 +9,8 @@
             while($donnee != null){
                 if($donnee['username']==$identifiant AND $donnee['password']==$mdp){
                     $user_id = $donnee['id'];
+                    $delivery_adress_id=$donnee['delivery_adress_id'];
+                    $billing_adress_id=$donnee['delivery_adress_id'];
                     $_SESSION['user_id'] = $user_id;
                     $isConnected=true;
                 }

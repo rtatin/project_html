@@ -18,12 +18,35 @@
     <tbody> 
     <?php if (isset($_POST['delete'])){
         $bdd=loadBDD();
-                    $bdd->query(" DELETE FROM `order_products` where product_id=".$_POST['delete']);
+                $bdd->query(" DELETE FROM `order_products` where product_id=".$_POST['delete']);
                 }
                 
                 ?>
+    <?php if (isset($_POST['decrease'])){
+        $bdd=loadBDD();
+            $test = $bdd->query("SELECT quantity FROM `order_products` where order_id=$user_id and product_id=".$_POST['decrease']);
+            $result = $test->fetchAll();
+            $quantity=(int)$result[0][0];
+            if($quantity>1){
+                $quantity=$quantity-1;
+                $request="UPDATE order_products set quantity='".$quantity."' where order_id=$user_id and product_id=".$_POST['decrease'];
+                $response = $bdd->exec($request);
+            }
+    }                
+                ?>
+    <?php if (isset($_POST['increase'])){
+      $bdd=loadBDD();
+      $test = $bdd->query("SELECT quantity FROM `order_products` where order_id=$user_id and product_id=".$_POST['increase']);
+      $result = $test->fetchAll();
+      $quantity=(int)$result[0][0];
+      $quantity=$quantity+1;
+      $request="UPDATE order_products set quantity='".$quantity."' where order_id=$user_id and product_id=".$_POST['increase'];
+      $response = $bdd->exec($request);
+}              
+          ?>
+
+
     <?php $total_order=0?>
-     <!-- Pour l'instant, on prend que l'orderID qui est égal à 1 pour afficher dans le panier -->
     <?php foreach (getAllProductById($user_id) as $order_product) {?>
         <tr>
             <td width="25%">
@@ -31,7 +54,7 @@
                         $image=$order_product['product_id'];
                         echo '<img src="Images/'.$image.'"png width="25%">';?>
             </td>
-            <td width="25%"><?php echo($order_product['quantity'])?></td>
+            <td width="25%"><form method="POST"><button class="btn" value="<?php echo $order_product['product_id']?>" width="3%" name="decrease">-</button></form><?php echo($order_product['quantity'])?><form method="POST"><button class="btn" value="<?php echo $order_product['product_id']?>" width="3%" name="increase">+</button></form></td>
             <td width="25%"><?php echo($order_product['unit_price'])?>€</td>
             <?php $total_price=$order_product['unit_price']*$order_product['quantity']?>
             <?php $total_order=$total_order+$total_price?>
@@ -46,5 +69,5 @@
 Total order price:
         <?php echo $total_order?>€<br>
 </body>
-
+<button class="btn" width="10%" position="center" name="place_order" value="<?php echo $order_product['product_id']?>" type="submit">Placer order</button>
 </html>

@@ -42,6 +42,9 @@ function getAllProductByRange($rangeID)
 
 return executeQuery($query, $params);
 }
+function launchBdd(){
+    $bdd = new PDO('mysql:host=localhost;dbname=sos', 'root','') ;
+}
 
 function loadBDD() {
     $bdd = new PDO('mysql:host=localhost;dbname=sos', 'root','') ;

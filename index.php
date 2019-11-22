@@ -8,16 +8,19 @@
 	$user_id = '';
 	$isConnected=false;
 	$page='index'; 
+	$billing_adress_id='';
+	$delivery_adress_id='';
 	
 
 	if (isset($_POST['stop']) ){			echo "SALUT";}
 
 	
-	if (isset($_SESSION['user_id'])) {		$isConnected=true;	$user_id=$_SESSION['user_id'];	}
+	if (isset($_SESSION['user_id'])) {		$isConnected=true;	$user_id=$_SESSION['user_id']; 	}
 
 	if(isset($_POST['identifiant']) AND isset($_POST['mdp'])  ){    include 'connection.php';    }
 
 	if (isset($_GET['page'])){		$page=$_GET['page'];	} 
+	
 ?>
 
 <html>
