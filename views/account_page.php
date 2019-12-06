@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html>
+<?php if ($isConnected==true){
+				echo ("User already connected");
+			} ?>
 <div id="create_account" > 
     <head>
         <title>creation de compte</title>
@@ -9,7 +12,7 @@
     </head>
 
 <body id="body2">
-
+			<?php if ($isConnected==false){ ?>
 			<form method="POST" action="index.php?page=creeCompte" class="formulaire login-form" required >
             <h1>Create account</h1>
 				<br>
@@ -60,10 +63,8 @@
 	  			<a id="useninfo" href="index.php?page=accueil">Connexion</a>
 	  			<br>
 			</form>
-
-    
+			<?php } ?>
 </body>
-
 </div>
 
 </html>
