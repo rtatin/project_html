@@ -26,6 +26,7 @@
         $bdd=loadBDD();
             $test = $bdd->query("SELECT quantity FROM `order_products` where order_id=$user_id and product_id=".$_POST['decrease']);
             $result = $test->fetchAll();
+            $test->closeCursor() ;
             $quantity=(int)$result[0][0];
             if($quantity>1){
                 $quantity=$quantity-1;
@@ -38,6 +39,7 @@
       $bdd=loadBDD();
       $test = $bdd->query("SELECT quantity FROM `order_products` where order_id=$user_id and product_id=".$_POST['increase']);
       $result = $test->fetchAll();
+      $test->closeCursor() ;
       $quantity=(int)$result[0][0];
       $quantity=$quantity+1;
       $request="UPDATE order_products set quantity='".$quantity."' where order_id=$user_id and product_id=".$_POST['increase'];

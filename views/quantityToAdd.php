@@ -19,6 +19,7 @@ $reponse = $bdd->prepare("SELECT * FROM order_products WHERE order_id = $user_id
 $reponse->execute(array(
 	));
 $data=$reponse->fetch();
+$reponse->closeCursor() ;
 
 if(empty($data)) 						/*Si l'utilisateur n'a pas de panier :*/
 {
@@ -49,7 +50,8 @@ $response = $bdd->exec($request);
 
 $reponse = $bdd->prepare("SELECT * FROM orders_products WHERE order_id = $user_id AND product_id=$pId");
 $reponse->execute(array(
-	));
+  ));
+$reponse->closeCursor() ;
 $data=$reponse->fetch();
 }
 if ($quantityToAdd == 0){
